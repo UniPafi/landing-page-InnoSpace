@@ -1,0 +1,49 @@
+/* Estilos para el selector de idioma */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.lang-btn {
+  background: none;
+  border: 2px solid transparent;
+  color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  height: 36px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  border-radius: 18px;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn.active {
+  opacity: 1;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes adicionales para modo oscuro */
+.dark-mode .lang-btn {
+  color: #ffffff;
+}
+
+.dark-mode .lang-btn.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}

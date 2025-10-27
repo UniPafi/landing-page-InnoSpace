@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Innospace - Conectamos talento con la industria</title>
+  <title data-i18n="page-title">Innospace - Conectamos talento con la industria</title>
   <link rel="stylesheet" href="public/assets/styles/styles.css" />
+  <link rel="stylesheet" href="public/assets/styles/dark-mode.css" />
+  <link rel="stylesheet" href="public/assets/styles/language-switch.css" />
 </head>
 <body>
   <!-- HEADER -->
@@ -15,75 +17,90 @@
 
     <nav>
       <ul>
-        <li><a href="#funciona">¿Cómo funciona?</a></li>
-        <li><a href="#proyectos">Proyectos exitosos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#funciona" data-i18n="nav-funciona">¿Cómo funciona?</a></li>
+        <li><a href="#proyectos" data-i18n="nav-proyectos">Proyectos exitosos</a></li>
+        <li><a href="#nosotros" data-i18n="nav-nosotros">Nosotros</a></li>
+        <li><a href="#explora" data-i18n="nav-explora">Explora</a></li>
+         <li>
+            <div class="lang-switch" role="group" aria-label="Idioma y modo" data-i18n="lang-label">
+              <button type="button" class="lang-btn" data-lang="english" aria-pressed="false">ENG</button>
+              <button type="button" class="lang-btn active" data-lang="spanish" aria-pressed="true">ESP</button>
+
+              <button class="toggle-switch" id="dark-mode-toggle" aria-label="Modo oscuro" aria-pressed="false" type="button">
+                <div class="toggle-track">
+                  <div class="toggle-thumb"></div>
+                  <span class="toggle-icon sun">☀️</span>
+                  <span class="toggle-icon moon">🌙</span>
+                </div>
+              </button>
+            </div>
+          </li>
       </ul>
     </nav>
 
-    <button class="btn-azul1">Iniciar sesión</button>
+  <button class="btn-azul1" data-i18n="login">Iniciar sesión</button>
   </header>
 
   <!-- HERO -->
     <section class="hero">
-    <div class="hero-texto">
-        <h1>Conectamos el talento del mañana con los retos de hoy</h1>
-        <p>El puente directo entre el talento universitario y los desafíos de la industria</p>
-        <button class="btn-azul">Regístrate ahora</button>
-    </div>
+  <div class="hero-texto">
+    <h1 data-i18n="hero-title">Conectamos el talento del mañana con los retos de hoy</h1>
+    <p data-i18n="hero-desc">El puente directo entre el talento universitario y los desafíos de la industria</p>
+    <button class="btn-azul" data-i18n="hero-cta">Regístrate ahora</button>
+  </div>
 
     <div class="hero-img">
-        <img src="public/assets/images/imagen1.jpg" alt="Imagen principal">
+        <img src="public/assets/images/imagen1.jpg" alt="Main image" data-i18n-alt="hero-img-alt">
     </div>
     </section>
 
 
   <!-- ¿CÓMO FUNCIONA? -->
   <section id="funciona" class="funciona">
-    <h2>¿Cómo funciona?</h2>
+  <h2 data-i18n="funciona-title">¿Cómo funciona?</h2>
     <div class="pasos">
       <div class="paso">
         <div class="numero">1</div>
-        <h3>Regístrate y Crea tu Perfil</h3>
-        <p><strong>Estudiantes:</strong> Crea tu cuenta, sube tu CV y construye tu portafolio para mostrar tus habilidades y experiencia.</p>
-        <p><strong>Empresas:</strong> Registra tu empresa y define las áreas de interés para empezar a publicar retos.</p>
+        <h3 data-i18n="paso1-title">Regístrate y Crea tu Perfil</h3>
+        <p data-i18n="paso1-estudiantes"><strong>Estudiantes:</strong> Crea tu cuenta, sube tu CV y construye tu portafolio para mostrar tus habilidades y experiencia.</p>
+        <p data-i18n="paso1-empresas"><strong>Empresas:</strong> Registra tu empresa y define las áreas de interés para empezar a publicar retos.</p>
       </div>
 
       <div class="paso">
         <div class="numero">2</div>
-        <h3>Explora y Publica</h3>
-        <p><strong>Estudiantes:</strong> Explora una lista de retos reales publicados por empresas y filtra por tu área.</p>
-        <p><strong>Empresas:</strong> Publica un reto o problema de tu sector o explora el banco de ideas innovadoras subidas por estudiantes.</p>
+        <h3 data-i18n="paso2-title">Explora y Publica</h3>
+        <p data-i18n="paso2-estudiantes"><strong>Estudiantes:</strong> Explora una lista de retos reales publicados por empresas y filtra por tu área.</p>
+        <p data-i18n="paso2-empresas"><strong>Empresas:</strong> Publica un reto o problema de tu sector o explora el banco de ideas innovadoras subidas por estudiantes.</p>
       </div>
 
       <div class="paso">
         <div class="numero">3</div>
-        <h3>Conecta y Colabora</h3>
-        <p><strong>Estudiantes:</strong> Postúlate a los retos que te interesen con un solo clic y envía tu perfil para ser considerado.</p>
-        <p><strong>Empresas:</strong> Recibe postulaciones y filtra automáticamente a los estudiantes más talentosos según sus habilidades y portafolio.</p>
+        <h3 data-i18n="paso3-title">Conecta y Colabora</h3>
+        <p data-i18n="paso3-estudiantes"><strong>Estudiantes:</strong> Postúlate a los retos que te interesen con un solo clic y envía tu perfil para ser considerado.</p>
+        <p data-i18n="paso3-empresas"><strong>Empresas:</strong> Recibe postulaciones y filtra automáticamente a los estudiantes más talentosos según sus habilidades y portafolio.</p>
       </div>
 
       <div class="paso">
         <div class="numero">4</div>
-        <h3>Logra Resultados Reales</h3>
-        <p><strong>Estudiantes:</strong> Haz un seguimiento de tus postulaciones, gana financiamiento para tus ideas y suma proyectos reales a tu portafolio.</p>
-        <p><strong>Empresas:</strong> Encuentra la solución innovadora a tu reto y descubre talento emergente para vincular a tu organización.</p>
+        <h3 data-i18n="paso4-title">Logra Resultados Reales</h3>
+        <p data-i18n="paso4-estudiantes"><strong>Estudiantes:</strong> Haz un seguimiento de tus postulaciones, gana financiamiento para tus ideas y suma proyectos reales a tu portafolio.</p>
+        <p data-i18n="paso4-empresas"><strong>Empresas:</strong> Encuentra la solución innovadora a tu reto y descubre talento emergente para vincular a tu organización.</p>
       </div>
     </div>
   </section>
 
   <!-- PROYECTOS EXITOSOS -->
   <section id="proyectos" class="proyectos">
-    <h2>Proyectos exitosos</h2>
+    <h2 data-i18n="proyectos-title">Proyectos exitosos</h2>
 
     <div class="projects-wrapper">
       <!-- Card 1 -->
       <article class="project-card">
         <div class="project-content">
           <h3>Jeremy R.</h3>
-          <small>Estudiante de Ing. Software</small>
-          <small>Ahora Desarrollador Jr. en BioPafi</small>
-          <p>
+          <small data-i18n="jeremy-role">Estudiante de Ing. Software</small>
+          <small data-i18n="jeremy-position">Ahora Desarrollador Jr. en BioPafi</small>
+          <p data-i18n="jeremy-story">
             La plataforma fue el trampolín que necesitaba. Postulé a un reto de una fintech a través de la sección de búsqueda filtrada y, al ser aceptado, el proyecto se agregó automáticamente a mi portafolio digital de la app. ¡Eso llamó la atención de mi empleador actual!
           </p>
         </div>
@@ -96,9 +113,9 @@
       <article class="project-card">
         <div class="project-content">
           <h3>Leonardo C.</h3>
-          <small>Gerente de BioPafi</small>
-          <small>Ha publicado 5 retos en la plataforma</small>
-          <p>
+          <small data-i18n="leonardo-role">Gerente de BioPafi</small>
+          <small data-i18n="leonardo-projects">Ha publicado 5 retos en la plataforma</small>
+          <p data-i18n="leonardo-story">
             Publicamos un desafío de optimización de procesos en la app. En 72 horas recibimos propuestas increíbles. El filtrado por habilidades nos permitió encontrar a Jeremy, un estudiante cuya solución estamos implementando ahora. Es la forma más eficiente de acceder a talento fresco y con ideas aplicables.
           </p>
         </div>
@@ -109,23 +126,40 @@
     </div>
 
     <div class="cta-center">
-      <button class="btn-azul2">Publica tu primer proyecto</button>
+      <button class="btn-azul2" data-i18n="proyecto-cta">Publica tu primer proyecto</button>
     </div>
   </section>
 
-<!-- NOSOTROS -->
+   <!--EXPLORAR -->
+  <section id="explora" class="explora-section">
+    <h2 data-i18n="nav-explora">Explora</h2>
+    <div class="explora-content">
+      <div class="explora-text">
+        <h2 data-i18n="explora-title">Lleva la innovación contigo</h2>
+        <p data-i18n="explora-desc">Innospace también está disponible como aplicación móvil. Diseñada para que los estudiantes y empresas se conecten de forma rápida, sencilla y desde cualquier lugar. Explora proyectos, colabora con equipos y comparte tus logros desde la palma de tu mano.</p>
+        <p data-i18n="explora-cta" style="font-weight: bold; font-size: 1.3rem; text-align: center;"> ¡Descubre todo el poder de Innospace donde quiera que estés!</p>
+
+      </div>
+      <div class="explora-image">
+        <img src="public/assets/images/login.png" alt="Innospace mobile app" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NOSOTROS -->
 <section id="nosotros" class="nosotros-section">
   <div class="nosotros-inner">
     <div class="nosotros-header">
-      <h2>UniPafi</h2>
+      <h2 data-i18n="nosotros-title">UniPafi</h2>
       <img class="nosotros-logo" src="public/assets/images/logo innospace.jpg" alt="Innospace logo" />
     </div>
 
-    <p>
+    <p data-i18n="nosotros-desc">
       En UniPafi, conectamos el talento universitario con los desafíos de la industria. Creemos que las ideas más innovadoras nacen en las aulas, y nuestro propósito es convertirlas en soluciones reales para las empresas. A través de nuestra plataforma, impulsamos el desarrollo profesional de los estudiantes mientras ayudamos a las organizaciones a descubrir perspectivas frescas y enfoques disruptivos. Somos el puente donde la creatividad joven y la experiencia empresarial se unen para generar un impacto tangible.
     </p>
 
-    <blockquote class="quote">"Creemos que el futuro de la innovación se escribe en las aulas"</blockquote>
+    <blockquote class="quote" data-i18n="nosotros-quote">"Creemos que el futuro de la innovación se escribe en las aulas"</blockquote>
   </div>
 </section>
 
@@ -134,12 +168,13 @@
     <div class="footer-inner">
       <img src="public/assets/images/logo innospace.jpg" alt="Innospace" class="footer-logo" />
       <nav class="footer-nav">
-        <a href="#funciona">¿Cómo funciona?</a>
-        <a href="#proyectos">Proyectos exitosos</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#funciona" data-i18n="footer-funciona">¿Cómo funciona?</a>
+        <a href="#proyectos" data-i18n="footer-proyectos">Proyectos exitosos</a>
+        <a href="#explora" data-i18n="footer-explora">Explorar</a>
+        <a href="#nosotros" data-i18n="footer-nosotros">Nosotros</a>
       </nav>
 
-      <p class="copyright">©2025 Innospace | Todos los derechos reservados</p>
+      <p class="copyright" data-i18n="copyright">©2025 Innospace | Todos los derechos reservados</p>
     </div>
   </footer>
 
