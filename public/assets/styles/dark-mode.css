@@ -204,3 +204,8 @@ body.dark-mode {
   background-color: #2a2b2d;
   border-left-color: #5359c1;
 }
+
+/* Videos dark mode */
+.dark-mode .video-wrapper iframe {
+  filter: brightness(0.9);
+}

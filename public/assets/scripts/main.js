@@ -51,7 +51,9 @@ const translations = {
     "jeremy-story": "The platform was the springboard I needed. I applied to a fintech challenge through the filtered search section and, once accepted, the project was automatically added to my digital portfolio in the app. That caught my current employer's attention!",
     "leonardo-role": "BioPafi Manager",
     "leonardo-projects": "Has published 5 challenges on the platform",
-    "leonardo-story": "We published a process optimization challenge in the app. In 72 hours we received incredible proposals. The skills filtering allowed us to find Jeremy, a student whose solution we are implementing now. It's the most efficient way to access fresh talent with applicable ideas."
+    "leonardo-story": "We published a process optimization challenge in the app. In 72 hours we received incredible proposals. The skills filtering allowed us to find Jeremy, a student whose solution we are implementing now. It's the most efficient way to access fresh talent with applicable ideas.",
+    "video-equipo-title": "About the Team",
+    "video-producto-title": "About Our Product"
   },
   spanish: {
     "nav-funciona": "¿Cómo funciona?",
@@ -95,7 +97,9 @@ const translations = {
     "jeremy-story": "La plataforma fue el trampolín que necesitaba. Postulé a un reto de una fintech a través de la sección de búsqueda filtrada y, al ser aceptado, el proyecto se agregó automáticamente a mi portafolio digital de la app. ¡Eso llamó la atención de mi empleador actual!",
     "leonardo-role": "Gerente de BioPafi",
     "leonardo-projects": "Ha publicado 5 retos en la plataforma",
-    "leonardo-story": "Publicamos un desafío de optimización de procesos en la app. En 72 horas recibimos propuestas increíbles. El filtrado por habilidades nos permitió encontrar a Jeremy, un estudiante cuya solución estamos implementando ahora. Es la forma más eficiente de acceder a talento fresco y con ideas aplicables."
+    "leonardo-story": "Publicamos un desafío de optimización de procesos en la app. En 72 horas recibimos propuestas increíbles. El filtrado por habilidades nos permitió encontrar a Jeremy, un estudiante cuya solución estamos implementando ahora. Es la forma más eficiente de acceder a talento fresco y con ideas aplicables.",
+    "video-equipo-title": "Sobre el Equipo",
+    "video-producto-title": "Sobre nuestro producto"
   }
 };
 
